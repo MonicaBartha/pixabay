@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import Form from './components/Form';
 import ImageList from './components/ImageList';
+import Banner from './assets/photo.jfif';
+import './App.css';
 
 function App() {
 
@@ -55,7 +57,8 @@ const nextPage = () => {
   return (
     <div className="container">
       <div className="jumbotron">
-        <p className="lead text-center">Search Image</p>  
+        <img src={Banner} alt="landscape banner" className="banner" />
+        <h3 className="text-center">SEARCH IMAGE</h3>  
         <Form
           setSearch={setSearch}
         />

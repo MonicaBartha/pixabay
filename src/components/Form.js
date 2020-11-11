@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Error from './Error';
+import PropTypes from 'prop-types';
 
 const Form = ( {setSearch} ) => {
 
@@ -28,7 +29,7 @@ const Form = ( {setSearch} ) => {
                     <input
                         type="text"
                         className="form-control form-control-lg"
-                        placeholder="Search image, example: people, flowers"
+                        placeholder="Example: landscape, people, coffee"
                         onChange={ e => setItem(e.target.value) }
                     />
                 </div>
@@ -46,4 +47,7 @@ const Form = ( {setSearch} ) => {
     )
 }
 
+Form.propTypes = {
+    setSearch: PropTypes.func.isRequired
+}
 export default Form;

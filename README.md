@@ -1,10 +1,7 @@
 ## Pixabay
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### Available Scripts
-
-Pixabay API <br>
-CSS with Booswatch
+This project is created with React.js, CSS with Booswatch and uses Pixabay API, fetch method.
 
 ### Deploy
+
+https://pixabay-images-app.netlify.app/

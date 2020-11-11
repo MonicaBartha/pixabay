@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Image = ({ image }) => {
     // extract the variables from api
@@ -27,4 +28,7 @@ const Image = ({ image }) => {
     )
 }
 
+Image.propTypes = {
+    image: PropTypes.object.isRequired
+}
 export default Image;

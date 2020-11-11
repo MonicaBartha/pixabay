@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from './Image';
+import PropTypes from 'prop-types';
 
 const ImageList = ({images}) => {
     return (
@@ -14,4 +15,7 @@ const ImageList = ({images}) => {
     )
 }
 
+ImageList.propTypes = {
+    images: PropTypes.array.isRequired
+}
 export default ImageList;
